@@ -35,7 +35,10 @@ let s:fg        = ['#F8F8F2', 255]
 
 let s:bglighter = ['#424450', 238]
 let s:bglight   = ['#343746', 237]
-let s:bg        = ['#282A36', 236]
+" color236 is overwritten by my custom Xresources, I think"
+" so the bg was wrong; manually setting it to color 0
+" let s:bg        = ['#282A36', 236]
+let s:bg        = ['#282A36', 0]
 let s:bgdark    = ['#21222C', 235]
 let s:bgdarker  = ['#191A21', 234]
 
@@ -74,22 +77,22 @@ let g:dracula_palette = {
       \}
 
 if has('nvim')
-  let g:terminal_color_0  = '#21222C'
-  let g:terminal_color_1  = '#FF5555'
-  let g:terminal_color_2  = '#50FA7B'
-  let g:terminal_color_3  = '#F1FA8C'
-  let g:terminal_color_4  = '#BD93F9'
-  let g:terminal_color_5  = '#FF79C6'
-  let g:terminal_color_6  = '#8BE9FD'
-  let g:terminal_color_7  = '#F8F8F2'
-  let g:terminal_color_8  = '#6272A4'
-  let g:terminal_color_9  = '#FF6E6E'
-  let g:terminal_color_10 = '#69FF94'
-  let g:terminal_color_11 = '#FFFFA5'
-  let g:terminal_color_12 = '#D6ACFF'
-  let g:terminal_color_13 = '#FF92DF'
-  let g:terminal_color_14 = '#A4FFFF'
-  let g:terminal_color_15 = '#FFFFFF'
+  let g:terminal_color_0  = '#44475A'
+  let g:terminal_color_1  = '#DE312B'
+  let g:terminal_color_2  = '#2FD651'
+  let g:terminal_color_3  = '#D0D662'
+  let g:terminal_color_4  = '#9C6FCF'
+  let g:terminal_color_5  = '#DE559C'
+  let g:terminal_color_6  = '#6AC5D3'
+  let g:terminal_color_7  = '#D7D4C8'
+  let g:terminal_color_8  = '#656B84'
+  let g:terminal_color_9  = '#FF5555'
+  let g:terminal_color_10 = '#50FA7B'
+  let g:terminal_color_11 = '#F1FA8C'
+  let g:terminal_color_12 = '#BD93F9'
+  let g:terminal_color_13 = '#FF79C6'
+  let g:terminal_color_14 = '#8BE9FD'
+  let g:terminal_color_15 = '#F8F8F2'
 endif
 
 " }}}2
@@ -327,7 +330,6 @@ hi! link Tag DraculaCyan
 hi! link helpHyperTextJump DraculaLink
 hi! link helpCommand DraculaPurple
 hi! link helpExample DraculaGreen
-hi! link helpBacktick Special
 
 "}}}
 
